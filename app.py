@@ -12,12 +12,12 @@ nltk.data.path.append(r'C:\nltk_data')  # Or a folder where you want to store NL
 nltk.download('vader_lexicon')
 
 # Check if model files exist
-print("Model file exists:", os.path.exists("C:/Users/tzexu/logistic_regression_model.pkl"))
-print("Vectorizer file exists:", os.path.exists("C:/Users/tzexu/tfidf_vectorizer.pkl"))
+print("Model file exists:", os.path.exists("logistic_regression_model.pkl"))
+print("Vectorizer file exists:", os.path.exists("tfidf_vectorizer.pkl"))
 
 # Load the model and vectorizer
-model_path = "C:/Users/tzexu/logistic_regression_model.pkl"
-vectorizer_path = "C:/Users/tzexu/tfidf_vectorizer.pkl"
+model_path = "logistic_regression_model.pkl"
+vectorizer_path = "tfidf_vectorizer.pkl"
 
 @st.cache_resource
 def load_model_and_vectorizer():
